@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(30, 38%, 92%);
+    
+}
+body{
+    margin-left: 30vw;
+    margin-top: 30vh;
+
+}
+.container{
+    width: 40vw;
+    height:50vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 5%;
+    /*margin: auto 11vh auto 0;*/
+ 
+}
+.image{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.image img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.text{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    width: 50%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius:5%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(228, 12%, 48%);
+    background-color: transparent;
+    font-size:medium;
+    padding-bottom: 4%;
+}
+h1{
+    background-color: transparent;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size:150;
+
+}
+p{
+    margin-top: 4%;
+    font-family: 'Fraunces', serif;
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(228, 12%, 48%);
+    background-color: transparent;
+    font-weight: 300;
+}
+.price{
+    display: inline;
+    color: green;
+}
+.strike{
+    color:  hsl(228, 12%, 48%);;
+    padding: 5%;
+    background-color: transparent;
+    translate: 20px;
+}
+button{
+    margin-top: 5%;
+    display: block;
+    width: 90%;
+    height: 12%;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    font-size: larger;
+    border: none;
+}
+button:hover{
+    background-color: rgb(3, 75, 3);
+}
+button i {
+    background-color: transparent;
+    padding-right: 5%;
+}
+/*mobile view codes*/
+@media screen and (min-width: 375px) and (max-width:1439px) {
+    body{
+        padding-bottom: 50%;
+    }
+    .container{
+    width: 40vw;
+    height:60vh;
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+
+    }
+    .image{
+        height: 25vh;
+        display: block;
+        width: 100%;
+    }
+    .image img{
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 5%;
+    }
+    .text{
+        position: relative;
+        width: auto;
+        border-top-right-radius: 0;
+        height: 25vh;
+
+    }
+}
